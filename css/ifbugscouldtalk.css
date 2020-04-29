@@ -1,0 +1,515 @@
+/*==========================================
+    Authour: Grady Mellin
+=============================================
+    GENERIC STYLES
+============================================*/
+html {
+    font-family: sans-serif;
+    font-size: 80%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: .875rem;
+    margin: 0;
+    font-family: "Helvetiica Neue" Arial, Helvetica, sans-serif;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: rgb(104, 166, 248);
+}
+
+footer,
+nav {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    line-height: 3rem;
+    font-weight: 900;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e01c1c;
+    text-shadow: .125rem .125rem .2rem rgba(0,0,0,0.5);    
+}
+
+h2 {
+    line-height: 3rem;
+    color: #e01c1c;
+}
+
+h3 {
+    line-height: 2rem;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    padding-top: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 0;
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.25rem;
+    padding-bottom: 1.25rem;
+    margin: .625rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.heading-padding {
+    padding-bottom: 2.5rem;
+}
+
+section {
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+
+.container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-fluid {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -1rem;
+    margin-left: -1rem;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.menu-container {
+    max-height: 25rem;
+    margin: 0% auto;
+    content: " ";
+    top: 0;
+    left: 0; 
+    position : fixed; /*to the top of the screen*/
+    width: 100%;
+    z-index: 100;
+    background-color:  rgba(45, 90, 214, 0.75);
+    border: .125rem solid rgb(2, 54, 131);
+    border-radius: .1875rem;
+
+}
+
+/*==========================================
+    NAV MENU SECTION
+============================================*/
+
+.menu {
+    font: bold 1.25rem/1.45rem sans-serif;
+    text-align: center;
+    display: inline;
+    margin: .75rem;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.menu li {
+    color: rgb(83, 51, 145);
+    display: inline-block;
+    margin-right: .125rem;
+    position: relative;
+    padding: .75rem 2.5rem;
+    border: .125rem solid rgb(3, 62, 150);
+    border-radius: .125rem;
+    background-color: #6683e2d2;
+    cursor: pointer;
+}
+.menu li:hover {
+    background-color: #5e96df;
+    color: #fff;
+}
+.menu li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  /* While being hovered, drop down menu appears
+  this also avoids a block-level bug*/
+  
+}
+.icon a{
+    float: right;
+    padding: .25rem;
+    margin-right: 3rem;
+    margin-top: .3rem;
+    border-radius: 1rem;
+    background-color: #ffffff8c;
+    
+}
+.icon img {   
+    float: right;
+    height: 3.3rem; 
+    box-shadow: none;
+    margin-top: 0;
+	margin-left: auto; 
+    margin-right: auto;
+}
+
+.icon a:hover{
+    text-shadow:none;
+    
+    box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.658);
+}
+
+/*==========================================
+    HOME SECTION
+============================================*/
+#home {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-backgound-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 22rem;
+    padding-bottom: 30rem;
+    color: #fff;
+}
+
+.head-main {
+    text-shadow: 2px 4px 5px rgba(0,0,0,0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: .4rem;
+    word-spacing: 1.65rem;
+    font-size: 4.5rem;
+    font-family: Impact, sans-serif;
+    line-height: 2;
+    border:.4rem double #fff;
+    padding: .7rem;
+}
+
+.head-sub-main {
+    font-size: 1.875rem;
+    font-weight: 500;
+    padding: 3rem 1.25rem .75rem 1.25rem;
+    text-transform: uppercase;
+}
+
+.head-last {
+    font-size: .75rem;
+    font-weight: 900;
+    padding: .4rem 1.25rem 1.25rem 1.25rem;
+    border: .075rem dotted #fff;
+    padding: .4rem;
+}
+
+/*==========================================
+    CONTACT STYLE here
+============================================*/
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 8px;
+    margin:0px auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+#contact {
+    background-color: #5e76fc;
+}
+
+.submission {
+    width: 60%;
+    padding: 10px;
+    border-radius: 0px;
+    margin: 0px auto;
+    background-color: rgba(100,65,0,.3);
+    box-shadow: -1px -1px 1px 0 rgba(0,0,0,0.1), 1px 2px 10px 0 rgba(0,0,0,0.5);
+}
+
+.submission h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+    line-height: 40px;
+}
+.submission h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: 0.4pt;
+    word-spacing: 0.3pt;
+    
+}
+
+.submission p {
+    color: #13161b;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.submission form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 70%;
+    border: 1px solid #808080;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px rgba(100,65,0,.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.submission input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-bottom: 2px solid #424549;
+    border-right: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #13161b;
+    box-shadow: inset 0px 3px 0px 0px rgba(5,5,5,.15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.submission input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(100,65,0,.8);
+}
+
+.form-spacer {
+    padding: 30px,39px;
+}
+
+.terms {
+    margin: 15px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    float: right;
+    display: inline;
+}
+
+.terms:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"]{
+    color: rgb(227, 222, 222);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin: opx 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #8d8e8f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0,0,0,0.5);
+}
+
+/*==========================================
+    FOOTER STYLE
+============================================*/
+
+#footer {
+    background-color: rgba(100,65,0,.3);
+    color: #000;
+    text-shadow: 2px 2px 8px 0 (0,0,0,0.4);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
+
+
+/*==========================================
+    MAIN SECTION ANIMATIONS
+============================================*/
+
+.main {
+    color: #f00;
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main li {
+    color: #000;
+    background-color: rgba(255,255,255,1);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 1px solid #9d0fa2;
+    border-radius: 6px;
+    /* background-color: #052136;*/
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 0.4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.main li:hover {
+    color: #f00;
+    background-color: rgba(100,65,0,0.3);
+}
+/*==========================================
+    GALLERY SECTION ANIMATION
+============================================*/
+
+.photo {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 1px;
+    border: 1px solid #021a40;
+    background-color: #ff0;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+}
+
+.photo-container {
+    text-align: center;
+    margin: 15px auto;
+    width: 500px;
+    height: 300px;
+}
+
+.photo-container img {
+    max-width: 100%;
+    width: 500px;
+    height: 300px;
+}
+
+.photo-overlay {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+}
+
+.photo-overlay p {
+    display: block;
+    margin: 3px;
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 20px;
+}
+.white-head {
+    color: #ece9e3;
+    margin: auto;
+}
+
+/*========================================
+    PHOTO OVERLAY TRANSITION
+=========================================*/
+
+.photo-overlay {
+    opacity: 0;
+    transition: opacity .5s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.photo-overlay:hover {
+    opacity: 1;
+}
+
+.photo img {
+    transition: transform .5s;
+    transform-origin: 50% 50%;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
